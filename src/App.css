@@ -1,0 +1,264 @@
+/* root styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Headers styling */
+.header{
+  display : flex;
+  justify-content : space-between;
+  align-items: center;
+  padding : 1rem 2rem;
+  background-color: #333;
+  color : white;
+  width : 100%;
+  box-sizing: border-box;
+  top : 0;
+  left : 0;
+  position: fixed;
+}
+.nav-links{
+  display : flex;
+  list-style: none;
+  margin : 0;
+  padding : 0;
+  flex-grow : 1;
+  justify-content: flex-end;
+}
+
+.nav-links li{
+  margin: 0 1rem;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+  color : #f39c12;
+}
+
+.logo{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.logo:hover{
+  color : #f39c12;
+}
+
+/* hero section styling */
+.hero{
+  display : flex;
+  justify-content : space-between;
+  align-items: center;
+  color : white;
+  padding: 4rem 2rem;
+  background-color: #282c34;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+.hero-content{
+  flex : 1;
+  max-width: 50%;
+  font-size: 2rem;
+  font-weight : bold;
+  line-height : 2.5rem;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.hero-img {
+  flex : 1;
+  max-width: 50%;
+  height : auto;
+  object-fit: cover;
+}
+
+@media (max-width : 768px){
+  .hero{
+    flex-direction: column;
+
+  }
+  .hero-content{
+    max-width: 90%;
+    margin-bottom : 2rem;
+    margin-right: 0rem;
+  }
+  .hero-img {
+    max-width : 90%;
+    object-fit: cover;
+  }
+}
+
+/* About me Styling */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #282c34;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+.about-title,
+.about-text {
+  width: 50%; /* Force each element to take up 50% of the container */
+  box-sizing: border-box; /* Prevent padding/margin from affecting width */
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.about-text {
+  font-size: 1rem;
+}
+
+@media (max-width : 768px){
+  .about {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .about-title {
+    max-width: 90%; 
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    padding: 1rem;
+    width : 100%;
+  }
+  .about-text {
+    max-width : 90%;
+    font-size: 1rem;
+    padding : 1rem;
+    width : 100%;
+  }
+}
+
+/* projects styling */
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  box-sizing: border-box;
+  width :100%
+
+}
+.projects-title{
+  padding : 1rem;
+  text-align: center;
+}
+
+
+/* project styling */
+.projects-list{
+  display: flex;
+  flex-direction: column;
+}
+.project-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 2rem;
+}
+.project-img{
+  align-items: center;
+  object-fit: cover;
+  width : 250px
+}
+.project-info{
+  width : 50%;
+  padding: 1rem;
+}
+.project-description{}
+
+/* project-tech-list sytling */
+.tech-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tech-item{
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.tech-item:hover {
+  background-color: #bdc3c7;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+/* experience section styling */
+.experiences{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  box-sizing: border-box;
+}
+.experiences-title{
+  padding : 1rem;
+  text-align: center;
+}
+.experiences-list{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.experience-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 2rem;
+}
+.experience-year{
+  align-items: center;
+  justify-content: center;
+  width : 50%;
+}
+.experience-info{
+  width : 50%;
+  padding: 1rem;
+}
+.experience-company{}
+.experience-role{}
+.experience-description{}
+
+
+/* Contact Section styling */
+.contact{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+}
+.social-media-url{
+  display : flex;
+  justify-content: space-between;
+}
+.contact-linkedin,
+.contact-github{
+  font-size: 3rem;
+  padding : 1rem;
+}
+
+
+
+
+
